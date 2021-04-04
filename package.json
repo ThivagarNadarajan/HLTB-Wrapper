@@ -1,0 +1,30 @@
+{
+  "name": "hltb-wrapper",
+  "version": "1.0.0",
+  "description": "Wrapper for HLTB API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThivagarNadarajan/HLTB-Wrapper.git"
+  },
+  "author": "Thivagar Nadarajan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThivagarNadarajan/HLTB-Wrapper/issues"
+  },
+  "homepage": "https://github.com/ThivagarNadarajan/HLTB-Wrapper#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "howlongtobeat": "^1.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "nodemon": "^2.0.7"
+  }
+}
