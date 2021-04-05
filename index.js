@@ -14,6 +14,10 @@ app.listen(PORT, () => {
 });
 
 app.get('/', async (_req, res) => {
+	res.send('Server running');
+});
+
+app.get('/games', async (_req, res) => {
 	try {
 		const result = await hltbService.search('');
 		res.send(result);
