@@ -20,7 +20,7 @@ app.get('/', async (_req, res) => {
 app.get('/games', async (_req, res) => {
 	try {
 		const result = await hltbService.search('');
-		res.send(result);
+		res.send(result.slice(0, 10));
 	} catch {
 		res.send({ error: 'Unable to get games' });
 	}
