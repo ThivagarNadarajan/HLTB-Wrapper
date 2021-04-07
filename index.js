@@ -26,7 +26,7 @@ app.get('/games', async (_req, res) => {
 	}
 });
 
-app.get('/:game', async (req, res) => {
+app.get('/games/:game', async (req, res) => {
 	try {
 		const result = await hltbService.search(req.params.game);
 		res.send(result);
